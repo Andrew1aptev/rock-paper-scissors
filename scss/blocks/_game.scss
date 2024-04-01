@@ -1,0 +1,63 @@
+.game{
+    &__container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__wrapper{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: palegreen;
+        padding: 20px;
+    }
+    &__title{
+        font-size: 50px;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+
+.game__images{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    margin-bottom: 50px;
+}
+.game__image--left, .game__image--right{
+    height: 300px;
+    width: 300px;
+    background-color: gray;
+}
+.game__image--rock{
+    background: url('./../img/rock.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.game__image--paper{
+    background: url('./../img/paper.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.game__image--scissors{
+    background: url('./../img/scissors.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.game__buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20px;
+    margin-bottom: 50px;
+}
+.game__button--paper, .game__button--rock, .game__button--scissors{
+    padding: 20px 40px;
+    background-color: plum;
+}
